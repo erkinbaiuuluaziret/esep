@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896794592286",
+    "project_id": "esep-66748",
+    "storage_bucket": "esep-66748.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896794592286:android:49d01ed27de509c7edda0f",
+        "android_client_info": {
+          "package_name": "com.example.esep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896794592286-ftu2feqfmu19d4qkhb4dav0tqa1ctk8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWPgSN1zP02Nz9q8UxR-GQogUd2reDmFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896794592286-ftu2feqfmu19d4qkhb4dav0tqa1ctk8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

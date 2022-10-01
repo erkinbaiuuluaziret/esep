@@ -1,0 +1,43 @@
+name: esep
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+
+    # Firebase
+  firebase_core: ^1.24.0
+  firebase_auth: ^3.11.0
+  cloud_firestore: ^3.5.0
+  firebase_storage: ^10.3.10 
+
+  # Google fonts
+  google_fonts: ^3.0.1
+  flutter_gen: ^5.0.1
+  fluttertoast: ^8.0.9
+  shared_preferences: ^2.0.15 
+
+  # SVG icons
+  flutter_svg: ^1.1.5
+
+  #
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
