@@ -18,7 +18,10 @@ class AuthorizeView extends GetView {
         children: [
           SvgPicture.asset('assets/icons/logo.svg'),
           SvgPicture.asset('assets/icons/ESEP.svg'),
-          const Text(AppText.allYourFinanceIntoModernApp)
+          const Text(
+            AppText.allYourFinanceIntoModernApp,
+            style: TextStyle(color: Colors.black),
+          )
         ],
       )),
     );
