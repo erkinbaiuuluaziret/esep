@@ -13,7 +13,7 @@ class CodeverifView extends GetView {
       ),
       body: Center(
         child: Text(
-          'CodeverifView',
+          'CodeverifView is good',
           style: TextStyle(fontSize: 20, color: Colors.red),
         ),
       ),
