@@ -1,3 +1,4 @@
+import 'package:esep/presentation/screens/home_screen.dart';
 import 'package:get/get.dart';
 
 import '../modules/authentication/bindings/authentication_binding.dart';
@@ -10,7 +11,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.MAIN;
 
   static final routes = [
     GetPage(
@@ -22,6 +23,10 @@ class AppPages {
       name: _Paths.AUTHENTICATION,
       page: () => const AuthenticationView(),
       binding: AuthenticationBinding(),
+    ),
+    GetPage(
+      name: _Paths.MAIN,
+      page: () => MainScreen(),
     ),
   ];
 }
