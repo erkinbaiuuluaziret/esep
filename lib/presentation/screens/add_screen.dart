@@ -33,7 +33,7 @@ class AddScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-                          'assets/images/user_logo.png',
+                          'assets/icons/user_logo.png',
                         ),
                         Text('+996 777 000 111', style: TextStyles.textStyle1)
                       ],

@@ -28,7 +28,7 @@ class BalansScreen extends StatelessWidget {
                 Row(
                   children: [
                     Image.asset(
-                      'assets/images/user_logo.png',
+                      'assets/icons/user_logo.png',
                     ),
                     Padding(
                         padding: EdgeInsets.only(left: 20.0),

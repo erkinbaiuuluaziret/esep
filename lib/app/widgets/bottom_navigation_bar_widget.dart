@@ -50,7 +50,7 @@ buildBottomNavigationMenu(context, landingPageController) {
               BottomNavigationBarItem(
                 icon: SizedBox(
                   child: Image.asset(
-                    'assets/images/ring_logo.png',
+                    'assets/icons/ring_logo.png',
                     color: AppColors.white,
                     // size: 35.0,
                   ),
