@@ -1,7 +1,5 @@
 import 'package:esep/app/buttons/main_custom_button.dart';
 import 'package:esep/app/constans/app_text/app_text.dart';
-import 'package:esep/app/theme/colors/app_colors.dart';
-
 import 'package:esep/app/widgets/rounded_textfiled.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -38,7 +36,7 @@ class VerificationView extends GetView {
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0),
                   child: MainCustomButton(
-                    color: AppColors.mainColor,
+                    text: AppText.next,
                     onPressed: () {},
                   ),
                 ),
