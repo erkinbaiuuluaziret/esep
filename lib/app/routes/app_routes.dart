@@ -7,6 +7,7 @@ abstract class Routes {
   static const AUTHENTICATION = _Paths.AUTHENTICATION;
   static const VERIFICATION = _Paths.VERIFICATION;
   static const AUTHORIZE = _Paths.AUTHORIZE;
+  static const MAIN = _Paths.MAIN;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const AUTHENTICATION = '/authentication';
   static const VERIFICATION = '/verification';
   static const AUTHORIZE = '/authorize';
+  static const MAIN = '/main';
 }

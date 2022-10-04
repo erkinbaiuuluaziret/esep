@@ -1,4 +1,6 @@
+import 'package:esep/app/constans/app_text/app_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
 
@@ -12,11 +14,16 @@ class AuthorizeView extends GetView {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'AuthorizeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+          child: Column(
+        children: [
+          SvgPicture.asset('assets/icons/logo.svg'),
+          SvgPicture.asset('assets/icons/ESEP.svg'),
+          const Text(
+            AppText.allYourFinanceIntoModernApp,
+            style: TextStyle(color: Colors.black),
+          )
+        ],
+      )),
     );
   }
 }
