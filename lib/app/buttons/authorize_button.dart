@@ -2,16 +2,14 @@
 
 import 'package:esep/app/constans/app_text/app_text.dart';
 import 'package:esep/app/theme/colors/app_colors.dart';
-import 'package:esep/app/theme/textStyle/text_stayle.dart';
 import 'package:flutter/material.dart';
 
-class MainCustomButton extends StatelessWidget {
-  String text;
-
+class AuthorizeButton extends StatelessWidget {
+  Color color;
   VoidCallback onPressed;
 
-  MainCustomButton({
-    required this.text,
+  AuthorizeButton({
+    required this.color,
     required this.onPressed,
     Key? key,
   }) : super(key: key);
@@ -23,7 +21,7 @@ class MainCustomButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         // backgroundColor: color == null ? AppColors.green : AppColors.mainColor,
-        backgroundColor: AppColors.mainColor,
+        backgroundColor: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -32,7 +30,14 @@ class MainCustomButton extends StatelessWidget {
           52.0,
         ),
       ),
-      child: Text(text, style: TextStyles.white20w700),
+      child: const Text(
+        AppText.authorization,
+        style: TextStyle(
+          fontSize: 20.0,
+          color: AppColors.black,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
     );
   }
 }
