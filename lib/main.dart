@@ -4,11 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 
-void main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  return runApp(
     GetMaterialApp(
       title: "Application",
       initialRoute: AppPages.INITIAL,
