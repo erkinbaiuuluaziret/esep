@@ -12,37 +12,38 @@ class VerificationView extends GetView {
   const VerificationView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 80.0),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              SvgPicture.asset('assets/icons/logo.svg'),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 65.0),
-                child: Text(
-                  AppText.signUpWithPhoneNumber,
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.only(top: 80.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SvgPicture.asset('assets/icons/logo.svg'),
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 65.0),
+                  child: Text(
+                    AppText.signUpWithPhoneNumber,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
-              ),
-              const RoundedTextField(
-                hintText: AppText.phoneNumber,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30.0),
-                child: MainCustomButton(
-                  color: AppColors.mainColor,
-                  onPressed: () {},
+                const RoundedTextField(
+                  hintText: AppText.phoneNumber,
                 ),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.only(top: 30.0),
+                  child: MainCustomButton(
+                    color: AppColors.mainColor,
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
