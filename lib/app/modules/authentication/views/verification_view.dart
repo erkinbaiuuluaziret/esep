@@ -37,7 +37,9 @@ class VerificationView extends GetView {
                   padding: const EdgeInsets.only(top: 30.0),
                   child: MainCustomButton(
                     text: AppText.next,
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed('/code');
+                    },
                   ),
                 ),
               ],

@@ -1,4 +1,5 @@
 import 'package:esep/app/modules/authentication/views/authorize_view.dart';
+import 'package:esep/app/modules/authentication/views/code_view.dart';
 import 'package:esep/app/modules/authentication/views/verification_view.dart';
 import 'package:esep/presentation/screens/home_screen.dart';
 import 'package:get/get.dart';
@@ -38,6 +39,10 @@ class AppPages {
     GetPage(
       name: _Paths.MAIN,
       page: () => MainScreen(),
+    ),
+    GetPage(
+      name: _Paths.CODE,
+      page: () => CodeView(),
     ),
   ];
 }
