@@ -45,3 +45,4 @@ class TextStyles {
     fontWeight: FontWeight.w700,
   );
 }
+
