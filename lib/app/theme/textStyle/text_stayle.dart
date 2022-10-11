@@ -67,3 +67,4 @@ class TextStyles {
     fontWeight: FontWeight.w500,
   );
 }
+

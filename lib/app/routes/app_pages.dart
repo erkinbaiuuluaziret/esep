@@ -1,3 +1,4 @@
+
 import 'package:esep/app/modules/authentication/views/authorize_view.dart';
 import 'package:esep/app/modules/authentication/views/code_view.dart';
 import 'package:esep/app/modules/authentication/views/verification_view.dart';
@@ -14,8 +15,11 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
+
+
   static const INITIAL = Routes.AUTHORIZE;
   // static const INITIAL = Routes.MAIN;
+
 
   static final routes = [
     GetPage(
@@ -28,7 +32,8 @@ class AppPages {
       page: () => const AuthenticationView(),
       binding: AuthenticationBinding(),
     ),
-    GetPage(
+  
+
       name: _Paths.VERIFICATION,
       page: () => const VerificationView(),
     ),
@@ -44,5 +49,6 @@ class AppPages {
       name: _Paths.CODE,
       page: () => const CodeView(),
     ),
+
   ];
 }
