@@ -24,4 +24,6 @@ class AppText {
   static const String financeInside = 'финансы внутри';
   static const String modern = 'модного';
   static const String application = 'приложения';
+  static const String yourNumberWasSent = 'На ваш номер отправлен';
+  static const String smsWithPersonalCode = 'SMS с персональным кодом';
 }

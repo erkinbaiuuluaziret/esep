@@ -47,7 +47,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.CODE,
-      page: () => CodeView(),
+      page: () => const CodeView(),
     ),
 
   ];
