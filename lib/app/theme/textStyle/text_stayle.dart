@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../colors/app_colors.dart';
 
@@ -19,4 +20,40 @@ class TextStyles {
       fontWeight: FontWeight.w600, fontSize: 10);
         static const TextStyle textStyle8 = TextStyle(
       fontWeight: FontWeight.w500, fontSize:12);
+  static TextStyle grey30028w400 = TextStyle(
+    color: AppColors.grey300,
+    fontSize: 28,
+    wordSpacing: 3,
+    letterSpacing: 1,
+  );
+  static const TextStyle white38_10w400 = TextStyle(
+    fontSize: 10,
+    color: AppColors.white38,
+  );
+  static const TextStyle white20w700 = TextStyle(
+    color: AppColors.white,
+    fontSize: 20.0,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle monstserratBlack22w700 = GoogleFonts.montserrat(
+    color: AppColors.black,
+    fontSize: 24.0,
+    fontWeight: FontWeight.w700,
+  );
+  static const TextStyle black20w500 = TextStyle(
+    color: AppColors.black,
+    fontSize: 20.0,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle monserratBlack18w400 = GoogleFonts.montserrat(
+    color: AppColors.black,
+    fontSize: 18.0,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle monserratBlack25w500 = GoogleFonts.montserrat(
+    fontSize: 25.0,
+    color: AppColors.black,
+    fontWeight: FontWeight.w500,
+  );
 }

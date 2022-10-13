@@ -11,6 +11,13 @@ import 'package:flutter/material.dart';
 import 'package:scrollable_clean_calendar/controllers/clean_calendar_controller.dart';
 import 'package:scrollable_clean_calendar/scrollable_clean_calendar.dart';
 import 'package:scrollable_clean_calendar/utils/enums.dart';
+import 'package:esep/app/modules/home/controllers/home_controller.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../app/theme/colors/app_colors.dart';
+import '../../app/theme/textStyle/text_stayle.dart';
+import '../../app/widgets/balans_container_widget.dart';
 
 class BalansScreen extends StatelessWidget {
   BalansScreen({Key? key}) : super(key: key);
@@ -92,6 +99,9 @@ class BalansScreen extends StatelessWidget {
               ]),
             ),
           ),
+                SizedBox(height: 20),
+
+          BalansContainerWidget(title: 'Общий баланс', balans: '29 000 сом'),
           SizedBox(height: 13),
           Obx(() =>
               ListView(shrinkWrap: true, children: homeScreenController.groups))

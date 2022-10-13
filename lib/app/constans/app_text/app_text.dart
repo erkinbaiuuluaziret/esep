@@ -20,4 +20,10 @@ class AppText {
   static const String balance = 'Баланс';
   static const String income = 'Доход';
   static const String consumption = 'Расход';
+  static const String allYour = 'Все ваши';
+  static const String financeInside = 'финансы внутри';
+  static const String modern = 'модного';
+  static const String application = 'приложения';
+  static const String yourNumberWasSent = 'На ваш номер отправлен';
+  static const String smsWithPersonalCode = 'SMS с персональным кодом';
 }
