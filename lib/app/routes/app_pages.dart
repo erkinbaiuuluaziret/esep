@@ -14,17 +14,16 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.MAIN;
+
+  static const INITIAL = Routes.AUTHORIZE;
 
 
-  // static const INITIAL = Routes.AUTHORIZE;
   // static const INITIAL = Routes.MAIN;
-
 
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
@@ -32,10 +31,12 @@ class AppPages {
       page: () => const AuthenticationView(),
       binding: AuthenticationBinding(),
     ),
+
   
 GetPage(
+
       name: _Paths.VERIFICATION,
-      page: () => const VerificationView(),
+      page: () => VerificationView(),
     ),
     GetPage(
       name: _Paths.AUTHORIZE,
@@ -49,6 +50,5 @@ GetPage(
       name: _Paths.CODE,
       page: () => const CodeView(),
     ),
-
   ];
 }

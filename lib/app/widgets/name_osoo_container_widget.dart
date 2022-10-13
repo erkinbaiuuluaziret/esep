@@ -23,7 +23,7 @@ class NameOsOOContainerWidget extends StatelessWidget {
             child: Center(
               child: Text(
                 'ОсОО Олимп груп',
-                style: TextStyles.textStyle5,
+                style: TextStyles.white20w500,
               ),
             ),
           ),
