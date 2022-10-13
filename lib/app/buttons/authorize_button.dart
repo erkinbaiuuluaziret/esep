@@ -21,7 +21,7 @@ class AuthorizeButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         // backgroundColor: color == null ? AppColors.green : AppColors.mainColor,
-        backgroundColor: color,
+      backgroundColor: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),

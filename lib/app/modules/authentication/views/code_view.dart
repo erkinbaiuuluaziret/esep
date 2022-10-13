@@ -108,10 +108,10 @@ class CodeView extends GetView {
 }
 
 
-_signInWithNumber({
-  required String my_phone_number,
-  required FirebaseAuth mAuth
-}){
+// _signInWithNumber({
+//   required String my_phone_number,
+//   required FirebaseAuth mAuth
+// }){
 
-  mAuth.verifyPhoneNumber(verificationCompleted: verificationCompleted, verificationFailed: verificationFailed, codeSent: codeSent, codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,)
-}
+//   mAuth.verifyPhoneNumber(verificationCompleted: verificationCompleted, verificationFailed: verificationFailed, codeSent: codeSent, codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,)
+// }
