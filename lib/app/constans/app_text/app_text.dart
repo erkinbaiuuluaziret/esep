@@ -20,4 +20,10 @@ class AppText {
   static const String balance = 'Баланс';
   static const String income = 'Доход';
   static const String consumption = 'Расход';
+  static const String employeephonenumber ='Номер телефона работника';
+    static const String workername ='Имя работкника';
+
+
+
+
 }

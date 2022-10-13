@@ -7,9 +7,9 @@ import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 
 void main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  //await Firebase.initializeApp(
+    //options: DefaultFirebaseOptions.currentPlatform,
+  //);
   runApp(
     GetMaterialApp(
       title: "Application",

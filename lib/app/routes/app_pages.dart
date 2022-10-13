@@ -1,5 +1,7 @@
+import 'package:esep/presentation/Add_new_worker.dart';
 import 'package:get/get.dart';
 
+import '../../presentation/About_us.dart';
 import '../modules/authentication/bindings/authentication_binding.dart';
 import '../modules/authentication/views/authentication_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -10,7 +12,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.ABOUTUS;
 
   static final routes = [
     GetPage(
@@ -22,6 +24,14 @@ class AppPages {
       name: _Paths.AUTHENTICATION,
       page: () => const AuthenticationView(),
       binding: AuthenticationBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADDNEWWORKER,
+      page: () => AddNewWorker(),
+    ),
+      GetPage(
+      name: _Paths.ABOUTUS,
+      page: () => UiScreen(),
     ),
   ];
 }
