@@ -26,10 +26,15 @@ dependencies:
   # SVG icons
   flutter_svg: ^1.1.5
 
+  # calendar
+  cr_calendar: ^1.0.0
+  scrollable_clean_calendar: ^1.4.0
+
   #
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+
 
 
 
@@ -38,6 +43,14 @@ dev_dependencies:
   flutter_test: 
     sdk: flutter
 
+
 flutter: 
   uses-material-design: true
+
+
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
 

@@ -15,4 +15,8 @@ class TextStyles {
       fontWeight: FontWeight.w600, fontSize: 20, color: AppColors.white);
   static const TextStyle textStyle6 = TextStyle(
       fontWeight: FontWeight.w600, fontSize: 14, color: AppColors.greyColor);
+  static const TextStyle textStyle7 = TextStyle(
+      fontWeight: FontWeight.w600, fontSize: 10);
+        static const TextStyle textStyle8 = TextStyle(
+      fontWeight: FontWeight.w500, fontSize:12);
 }
