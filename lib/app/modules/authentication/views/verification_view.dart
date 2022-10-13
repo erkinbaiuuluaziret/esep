@@ -1,7 +1,9 @@
 import 'package:esep/app/buttons/main_custom_button.dart';
 import 'package:esep/app/constans/app_text/app_text.dart';
+
 import 'package:esep/app/modules/authentication/controllers/phone_number_controller.dart';
 import 'package:esep/app/modules/authentication/views/code_view.dart';
+
 import 'package:esep/app/theme/textStyle/text_stayle.dart';
 import 'package:esep/app/widgets/rounded_textfiled.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -42,18 +44,7 @@ class VerificationView extends GetView {
                   controller: phone,
                   hintText: AppText.phoneNumber,
                 ),
-                // Obx(() {
-                //   return pcontroller.codeSentResult == 'yes'
-                //       ? Column()
-                //       : Text(
-                //           'Waiting to verify your phone number',
-                //           style: TextStyle(
-                //             color: Colors.black,
-                //             fontSize: 20,
-                //             fontWeight: FontWeight.bold,
-                //           ),
-                //         );
-                // }),
+            
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0),
                   child: MainCustomButton(

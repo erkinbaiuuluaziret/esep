@@ -1,6 +1,8 @@
 import 'package:esep/app/buttons/main_custom_button.dart';
 import 'package:esep/app/constans/app_text/app_text.dart';
+
 import 'package:esep/app/modules/authentication/controllers/phone_number_controller.dart';
+
 import 'package:esep/app/theme/colors/app_colors.dart';
 import 'package:esep/app/theme/textStyle/text_stayle.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -10,12 +12,15 @@ import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
 
 class CodeView extends GetView {
+
   final otp = TextEditingController();
   PhoneNumberController controller = Get.find();
   // final PhoneNumberController pcontroller = Get.put(PhoneNumberController());
   // TextEditingController? _codeController;
   // final String otpString = '1234';
   CodeView({Key? key}) : super(key: key);
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -51,9 +56,12 @@ class CodeView extends GetView {
                       bottom: 75.0,
                     ),
                     child: Pinput(
+
                       controller: otp,
                       keyboardType: TextInputType.number,
                       length: 6,
+
+                    
                       focusedPinTheme: PinTheme(
                         width: 55.0,
                         height: 55.0,
@@ -101,12 +109,14 @@ class CodeView extends GetView {
                   ),
                   MainCustomButton(
                     text: AppText.continuu,
+
                     onPressed: () {
                       controller.verifyOtp(otp.text);
                       // String userInput = _codeController!.text;
                       // pcontroller.myCredentionals(
                       //     verID: pcontroller.veriResult, userInput: userInput);
                     },
+
                   )
                 ],
               ),
@@ -117,3 +127,12 @@ class CodeView extends GetView {
     );
   }
 }
+
+
+// _signInWithNumber({
+//   required String my_phone_number,
+//   required FirebaseAuth mAuth
+// }){
+
+//   mAuth.verifyPhoneNumber(verificationCompleted: verificationCompleted, verificationFailed: verificationFailed, codeSent: codeSent, codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,)
+// }

@@ -3,7 +3,8 @@ version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
 environment: 
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: '>=2.15.2'
+  # sdk: '>=2.18.2 <3.0.0'
 
 dependencies: 
   cupertino_icons: ^1.0.2
@@ -26,6 +27,10 @@ dependencies:
   # SVG icons
   flutter_svg: ^1.1.5
 
+  # calendar
+  cr_calendar: ^1.0.0
+  scrollable_clean_calendar: ^1.4.0
+
   #
   flutter_localizations:
     sdk: flutter
@@ -34,13 +39,17 @@ dependencies:
 
 
 
+
 dev_dependencies: 
   flutter_lints: ^2.0.0
   flutter_test: 
     sdk: flutter
 
+
 flutter: 
   uses-material-design: true
+
   assets:
-    - assets/icons/
     - assets/images/
+    - assets/icons/
+
