@@ -33,9 +33,7 @@ class AddScreen extends StatelessWidget {
                     Row(
                       children: [
                         Image.asset(
-
                           'assets/images/user_logo.png',
-
                         ),
                         Text('+996 777 000 111', style: TextStyles.textStyle1)
                       ],
@@ -94,7 +92,7 @@ class AddScreen extends StatelessWidget {
                             child: Center(
                               child: Text(
                                 'Добавить',
-                                style: TextStyles.textStyle5,
+                                style: TextStyles.white20w500,
                               ),
                             ),
                           ),
