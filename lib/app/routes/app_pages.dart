@@ -1,4 +1,7 @@
 import 'package:esep/presentation/Add_new_worker.dart';
+import 'package:esep/presentation/now_search_result.dart';
+import 'package:esep/presentation/search,result.dart';
+import 'package:esep/presentation/search.dart';
 import 'package:get/get.dart';
 
 import '../../presentation/About_us.dart';
@@ -12,7 +15,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.ABOUTUS;
+  static const INITIAL = Routes.NOWSEARCHRESULT;
 
   static final routes = [
     GetPage(
@@ -32,6 +35,18 @@ class AppPages {
       GetPage(
       name: _Paths.ABOUTUS,
       page: () => UiScreen(),
+    ),
+          GetPage(
+      name: _Paths.SEARCH,
+      page: () => SearchScreen(),
+    ),
+              GetPage(
+      name: _Paths.SEARCHRESULT,
+      page: () => SearchResult(),
+    ),
+                  GetPage(
+      name: _Paths.NOWSEARCHRESULT,
+      page: () => NowSearchResult(),
     ),
   ];
 }
